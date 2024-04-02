@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/Hrudayama_album_cover.jpg" alt="album_cover" class="song-img">
+            <h1>Hrudayama</h1>
+            <p>Sid Sriram</p>
+            <audio id="song">
+                <source src="media/hrudayama_major.mp3">
+            </audio>
+            <input type="range" name="slider" value="0" id="progress" class="progress">
+            <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play" id="play"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
